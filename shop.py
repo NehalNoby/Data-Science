@@ -8,6 +8,6 @@ for i in range(n):
         discount=price *0.1
         price-=discount
 
-        
+
     shop.append({"Item":item,"Price":price,"Quantity":quantity})
 print(shop)
