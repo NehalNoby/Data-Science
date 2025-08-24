@@ -1,0 +1,23 @@
+import pandas as pd
+# s=pd.Series([1, 2, 3, 4, 5])
+# print(s)
+
+data={'Name':['Alice','Bob','Charlie','Jai','Peter','Tony'],'Age':[25,30,22,21,None,23],'score':[85,90,78,88,92,95]}
+df=pd.DataFrame(data,index=['a','b','c','d','e','f'])
+# print(df.head())
+# print(df.head(2))
+# print(df.tail())
+# print(df.tail(3))
+# df.info()
+# print(df.describe())
+# print(df.columns)
+# print(df.shape)
+# print(df.loc['a'])
+# print(df.loc['c','Name'])
+# print(df.iloc[2])
+# print(df.iloc[1,0])
+print(df.iloc[:,0:2])
+print(df.isnull())
+# print(df.dropna())
+df['Age'].fillna(df['Age'].mean(),inplace=True)
+print(df)
