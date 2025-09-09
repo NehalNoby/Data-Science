@@ -1,0 +1,12 @@
+import numpy as np
+A = np.array([[2, 3], [5, 4]])
+b = np.array([8, 14])
+solution = np.linalg.solve(A, b)
+print("System solution (x, y):", solution)
+matrix = np.array([[4, -2], [1, 1]])
+eigenvalues, eigenvectors = np.linalg.eig(matrix)
+print("Matrix:")
+print(matrix)
+print("Eigenvalues:", eigenvalues)
+print("Eigenvectors:")
+print(eigenvectors)
